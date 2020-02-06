@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>My Finances</title>
+	<link rel="stylesheet" href="css/estilo.css" />
+	<link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+	<div id="interface">
+		<header id= "cabecalho">	
+			<h1><center>My Finances</center></h1>
+			<h2><center>Suas finanças pessoais onde quiser!</center></h2>
+			<nav id="menu">
+			<ul>	
+				<li><a href="index.html">LOGIN</a></li>
+				<li><a href="contas.html">CONTAS</a></li>
+				<li><a href="movimentacao.html">MOVIMENTAÇÃO</a></li>
+			</ul>
+			</nav>
+		</header>
+		
+		<br>
+		<hr>
+		<form method="post" id="fcontato" action="mailto:araujop856@gmail.com">
+			<fieldset id="form_login"><legend>Menu de Movimentação</legend>
+			<p><label for="cn_mov">N° DA MOVIMENTAÇÃO:</label><input type="text" name="tn_mov" id="cn_mov" size="10" maxlength="10"></p><br>
+			<p><label for="cdescricao_mov">DESCRIÇÃO:<br></label><input type="text" name="tdescricao_mov" id="cdescricao_mov" size="30" maxlength="255"></p>
+			<p><label for="ctipo_mov">TIPO:<br></label><input type="text" name="ttipo_mov" id="ctipo_mov" size="20" maxlength="20"></p>
+			<p><label for="cvalor_mov">VALOR:<br></label><input type="text" name="tvalor_mov" id="cvalor_mov" size="20" maxlength="20"></p>
+			<p><label for="cdata_mov">DATA:<br></label><input type="text" name="tdata_mov" id="cdata_mov" size="20" maxlength="20"></p>
+			<input type="submit" value="Cadastrar"/>
+			<input type="submit" value="Buscar"/>
+			<input type="submit" value="Atualizar"/>
+			<input type="submit" value="Apagar"/><br><h3>ou</h3><input type="reset" valeu="Limpar Campos">
+			</fieldset>
+	</div>	
+</body>
+</html>
